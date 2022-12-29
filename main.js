@@ -19,7 +19,7 @@ function setValue(selector, value, { parent = document } = {}) {
   parent.querySelector(`[data-${selector}]`).textContent = value;
 }
 
-function getIconUrl
+function getIconUrl() {}
 
 const currentIcon = document.querySelector("[data-current-icon]");
 function renderCurrentWeather(current) {

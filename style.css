@@ -1,0 +1,126 @@
+:root {
+  --clr-primary-200: hsl(200, 100%, 85%);
+  --clr-primary-400: hsl(200, 60%, 75%);
+  --clr-primary-500: hsl(200, 60%, 70%);
+  --clr-primary-600: hsl(200, 100%, 20%);
+  --clr-primary-800: hsl(200, 100%, 10%);
+
+  --ff-regular: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--clr-primary-200);
+  color: var(--clr-primary-800);
+  font-family: var(--ff-regular);
+}
+
+.blurred {
+  filter: blur(3px);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__left {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-right: 2px solid var(--clr-primary-800);
+}
+
+.weather__icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.weather__icon.large {
+  width: 80px;
+  height: 80px;
+}
+
+.header__curent-temp {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.header__right {
+  display: grid;
+  width: 50%;
+  justify-content: space-around;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+}
+
+.info__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.6rem;
+  color: var(--clr-primary-600);
+}
+
+.value-sub-info {
+  font-weight: lighter;
+  font-size: 0.75rem;
+}
+
+.day__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 75px);
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.day__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--clr-primary-800);
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+
+.day__card-day {
+  font-size: 0.75rem;
+  color: var(--clr-primary-600);
+  margin-top: 0.5rem;
+}
+
+.hour__section {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+}
+
+.hour__row {
+  background-color: var(--clr-primary-400);
+}
+
+.hour__row:nth-child(2n) {
+  background-color: var(--clr-primary-500);
+}
+
+.hour__row > td {
+  padding: 0.25rem 0.5rem;
+}

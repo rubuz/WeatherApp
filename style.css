@@ -31,11 +31,6 @@ body {
   font-family: var(--ff-regular);
 }
 
-h2 {
-  color: white;
-  text-shadow: 1px 1px 4px var(--clr-primary-800);
-}
-
 .blurred {
   filter: blur(3px);
   overflow: hidden;
@@ -79,6 +74,7 @@ h2 {
 .weekly__title {
   text-align: center;
   margin: 1rem 0 0 0;
+  color: var(--clr-primary-100);
 }
 
 .weather__icon {
@@ -157,6 +153,7 @@ h2 {
   background-color: var(--clr-primary-500);
   padding: 1rem;
   border-top: 1px solid var(--clr-primary-800);
+  color: var(--clr-primary-200);
 }
 
 .hour__section {

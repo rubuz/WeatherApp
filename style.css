@@ -29,6 +29,7 @@ body {
   background-color: var(--clr-primary-200);
   color: var(--clr-primary-800);
   font-family: var(--ff-regular);
+  pointer-events: none;
 }
 
 .blurred {

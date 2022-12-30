@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 :root {
+  --clr-primary-100: hsl(200, 100%, 95%);
   --clr-primary-200: hsl(200, 100%, 85%);
   --clr-primary-400: hsl(200, 60%, 75%);
   --clr-primary-500: hsl(200, 60%, 70%);
   --clr-primary-600: hsl(200, 100%, 20%);
   --clr-primary-800: hsl(200, 100%, 10%);
 
-  --ff-regular: sans-serif;
+  --ff-regular: "Montserrat", sans-serif;
 }
 
 *,
@@ -86,19 +89,20 @@ body {
 
 .day__section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 75px);
+  grid-template-columns: repeat(auto-fit, 85px);
   gap: 0.5rem;
   justify-content: center;
   padding: 1rem;
 }
 
 .day__card {
+  background-color: var(--clr-primary-100);
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--clr-primary-800);
   border-radius: 0.25rem;
-  padding: 0.25rem;
+  padding: 0.4rem;
 }
 
 .day__card-day {

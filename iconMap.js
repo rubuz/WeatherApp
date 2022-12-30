@@ -13,6 +13,6 @@ addMapping([95, 96, 99], "cloud-bolt");
 
 function addMapping(values, icon) {
   values.forEach((value) => {
-    ICON_MAP.set(value.icon);
+    ICON_MAP.set(value, icon);
   });
 }

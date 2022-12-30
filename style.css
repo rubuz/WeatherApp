@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
   --clr-primary-100: hsl(200, 100%, 95%);
@@ -29,9 +29,23 @@ body {
   overflow: hidden;
 }
 
-.header {
+.current__title {
+  width: 30%;
+  height: 96px;
+  padding: 1rem;
+  border-right: 2px solid var(--clr-primary-800);
   display: flex;
   align-items: center;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--clr-primary-100);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--clr-primary-800);
 }
 
 .header__left {
@@ -42,6 +56,11 @@ body {
   margin: 0.5rem;
   padding: 0.5rem;
   border-right: 2px solid var(--clr-primary-800);
+}
+
+.weekly__title {
+  text-align: center;
+  margin: 1rem 0 0 0;
 }
 
 .weather__icon {
@@ -73,6 +92,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.3rem;
 }
 
 .label {
@@ -109,12 +129,18 @@ body {
   font-size: 0.75rem;
   color: var(--clr-primary-600);
   margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.hourly__title {
+  text-align: center;
 }
 
 .hour__section {
   width: 100%;
   text-align: center;
   border-spacing: 0;
+  margin: 1rem 0 0 0;
 }
 
 .hour__row {

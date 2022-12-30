@@ -7,6 +7,7 @@
   </head>
   <body class="blurred">
     <header class="header">
+      <h2 class="current__title">Current Weather</h2>
       <div class="header__left">
         <img
           src="icons/sun.svg"
@@ -30,7 +31,7 @@
           <div class="label">Wind</div>
           <div>
             <span data-current-wind>32</span
-            ><span class="value-sub-info">km/h</span>
+            ><span class="value-sub-info"> km/h</span>
           </div>
         </div>
         <div class="info__group">
@@ -45,11 +46,13 @@
           <div class="label">Precip</div>
           <div>
             <span data-current-precip>32</span
-            ><span class="value-sub-info">mm</span>
+            ><span class="value-sub-info"> mm</span>
           </div>
         </div>
       </div>
     </header>
+
+    <h2 class="weekly__title">Weekly forecast</h2>
     <section class="day__section" data-day-section>
       <div class="day__card">
         <img src="icons/cloud.svg" class="weather__icon" />
@@ -88,6 +91,7 @@
       </div>
     </section>
 
+    <h2 class="hourly__title">Hourly forecast</h2>
     <table class="hour__section">
       <tbody data-hour-section>
         <tr class="hour__row">
@@ -198,7 +202,7 @@
           <div class="info__group">
             <div class="label">Wind</div>
             <div>
-              <span data-wind>6</span><span class="value-sub-info">km/h</span>
+              <span data-wind></span><span class="value-sub-info"> km/h</span>
             </div>
           </div>
         </td>
@@ -206,7 +210,7 @@
           <div class="info__group">
             <div class="label">Precip</div>
             <div>
-              <span data-precip>6</span><span class="value-sub-info">mm</span>
+              <span data-precip></span><span class="value-sub-info"> mm</span>
             </div>
           </div>
         </td>

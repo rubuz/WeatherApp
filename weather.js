@@ -65,7 +65,7 @@ function parseHourlyWeather({ hourly, current_weather }) {
         iconCode: hourly.weathercode[index],
         temp: Math.round(hourly.temperature_2m[index]),
         feelsLike: Math.round(hourly.apparent_temperature[index]),
-        windspeed: Math.round(hourly.windspeed_10m[index]),
+        windSpeed: Math.round(hourly.windspeed_10m[index]),
         precip: Math.round(hourly.precipitation[index] * 100) / 100,
       };
     })
